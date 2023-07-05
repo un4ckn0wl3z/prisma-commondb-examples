@@ -1,5 +1,5 @@
 import { INestApplication, Injectable, OnModuleInit } from '@nestjs/common';
-import { PrismaClient } from '@prisma/commondb_examples';
+import { PrismaClient } from './prisma/commondb_examples';
 import { ObjectId } from 'bson';
 
 @Injectable()
