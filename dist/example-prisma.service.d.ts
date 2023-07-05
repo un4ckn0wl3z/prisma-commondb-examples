@@ -1,5 +1,5 @@
 import { INestApplication, OnModuleInit } from '@nestjs/common';
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from '@prisma/commondb_examples';
 export declare class ExamplePrismaService extends PrismaClient implements OnModuleInit {
     private injectTsFieldMiddleware;
     onModuleInit(): Promise<void>;

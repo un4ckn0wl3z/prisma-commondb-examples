@@ -1,6 +1,6 @@
 generator client {
   provider = "prisma-client-js"
-  output = "../node_modules/@prisma/commondb_examples"
+  output = "./prisma/commondb_examples"
 }
 
 datasource db {
