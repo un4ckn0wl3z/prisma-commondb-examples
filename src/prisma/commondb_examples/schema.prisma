@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+  output = "./prisma/commondb_examples"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("EXAMPLE_DATABASE_URL")
+}
+
+model ExampleDB {
+  id           String  @id @default(auto()) @map("_id") @db.ObjectId
+  referredType String  @map("@referredType")
+  example      String
+  ts           String? @db.ObjectId
+
+  @@map("commondb.examples")
+}
