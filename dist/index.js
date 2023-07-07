@@ -16,5 +16,5 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./example-prisma.module"), exports);
 __exportStar(require("./example-prisma.service"), exports);
-__exportStar(require("./prisma/commondb_examples"), exports);
+__exportStar(require("@prisma/commondb_examples"), exports);
 //# sourceMappingURL=index.js.map

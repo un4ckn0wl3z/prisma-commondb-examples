@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ExamplePrismaService = void 0;
 const common_1 = require("@nestjs/common");
-const commondb_examples_1 = require("./prisma/commondb_examples");
+const commondb_examples_1 = require("@prisma/commondb_examples");
 const bson_1 = require("bson");
 let ExamplePrismaService = exports.ExamplePrismaService = class ExamplePrismaService extends commondb_examples_1.PrismaClient {
     injectTsFieldMiddleware() {
