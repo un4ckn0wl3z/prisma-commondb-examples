@@ -5,6 +5,10 @@ import { ObjectId } from 'bson';
 @Injectable()
 export class ExamplePrismaService extends PrismaClient implements OnModuleInit {
 
+  constructor(){
+    super()
+  }
+
   private injectTsFieldMiddleware() {
     this.$use((params, next) => {
       if (params.action === 'create' ||

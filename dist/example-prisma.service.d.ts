@@ -1,6 +1,7 @@
 import { INestApplication, OnModuleInit } from '@nestjs/common';
 import { PrismaClient } from './prisma/commondb_examples';
 export declare class ExamplePrismaService extends PrismaClient implements OnModuleInit {
+    constructor();
     private injectTsFieldMiddleware;
     onModuleInit(): Promise<void>;
     enableShutdownHooks(app: INestApplication): Promise<void>;
